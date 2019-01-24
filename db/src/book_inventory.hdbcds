@@ -1,0 +1,8 @@
+context book_inventory {
+
+    entity BOOK_INV {
+        BOOK_ID    : Integer;
+        STORE_ID   : Integer;
+        BOOK_COUNT : Integer;
+    };
+};

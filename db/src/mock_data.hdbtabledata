@@ -1,0 +1,26 @@
+{
+	"format_version": 1,
+	"imports": [{
+		"target_table": "book_inventory.BOOK_INV",
+		"source_data": {
+			"data_type": "CSV",
+			"file_name": "inventory.csv",
+			"has_header": false,
+			"dialect": "HANA",
+			"type_config": {
+				"delimiter": ","
+			}
+		},
+		"import_settings": {
+			"import_columns": ["BOOK_ID",
+				"STORE_ID",
+				"BOOK_COUNT"
+			]
+		},
+		"column_mappings": {
+			"BOOK_ID": 1,
+			"STORE_ID": 2,
+			"BOOK_COUNT": 3
+		}
+	}]
+}
